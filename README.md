@@ -6,7 +6,7 @@
 
 ##Usage Examples:
 *	import ibmdb2
-*	db = ibmdb2.db(conn_str)  ##-connect to the database using the connection string for example conn_str = "DATABASE=BLUDB;HOSTNAME=dashdb-txn-sbox-yp-dal09-04.services.dal.bluemix.net;PORT=50000;PROTOCOL=TCPIP;UID=username;PWD=password;"
+*	db = ibmdb2.db(conn_str)  ##-connect to the database using the connection string for example conn_str = "DATABASE=BLUDB; HOSTNAME=dashdb-txn-sbox-yp-dal09-04.services.dal.bluemix.net; PORT=50000; PROTOCOL=TCPIP; UID=username; PWD=password;"
 *	Note: In the SQL statements all columns should be enclosed with " double quotes and text be enclosed with ' single quotes.
 *	db.read('select "column1","column2" from mytable where "column1" like \'myword\' ')  ##-returns column1 & 2 from table where column = myword
 *	db.read('select "column" from table", flat=False)  ##-returns the raw read data 
